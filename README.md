@@ -1,54 +1,134 @@
-# Agora Hackathon Template
+# SF Tech Week Agora Hackathon [Oct 6 to Oct 12]
 
-This repository serves as a template for creating new Agora hackathon repositories. It provides a streamlined way to set up hackathon documentation with consistent formatting and structure. It includes a setup script to automatically generate the README.md, hackathon-rating-rubric.md, and Thought_Starters.md files.
+Welcome to the Agora Tech Week Hackathon! This repo serves as the central hub for hackathon submissions.
 
-## Quick Start
 
-1. **Create a new repository** using this template (click the "Use this template" button on GitHub)  
-   ![How to create a new repository from this template](./.github/images/create_from_template_small.gif)
-2. **Update the configuration** in `hackathon_config.yaml` with your event details
-3. **Run the generator**:
-   ```bash
-   npm install
-   npm run setup
-   ```
-4. **Review and commit** the customized files
 
-That's it! The setup script will automatically generate all necessary documentation files and clean up after itself.
+## 🎯 **Theme: AI-Powered Real-Time Communication**
 
-## What Gets Generated
+Build innovative solutions using Agora's Conversational AI Engine to showcase Agora powered Voice-to-Voice AI.
 
-The generator will create three main files:
+### Focus Areas
 
-1. `README.md` - Main hackathon documentation
-2. `hackathon-rating-rubric.md` - Judging criteria and scoring
-3. `Thought_Starters.md` - Project ideas and inspiration
-4. `evaluation_template.md` - Evaluation template based on the judging criteria
+- Real-time video/audio communication
 
-## Configuration
+  
+- AI-powered content moderation
 
-The `hackathon_config.yaml` file contains all the customizable elements:
+  
+- Voice and video analytics
 
-- `event`: Event details
-- `theme`: Hackathon theme and focus areas
-  - `type`: Either 'specific' or 'open'
-  - `title`: Theme title (for specific themes)
-  - `description`: Theme description
-  - `focus_areas`: List of specific areas to focus on
-  - `technologies`: List of recommended technologies
-- `contact`: Contact information
-- `submission_guidelines`: Submission guidelines
-- `judging_criteria`: Judging criteria
-- `thought_starters`: Project ideas and inspiration
+  
+- Interactive live streaming
 
-## After Generation
+  
+### Recommended Technologies
 
-After running the generator:
+- Agora Conversational AI Engine
 
-1. Review the generated files
-2. Make any necessary manual adjustments
-3. Commit the changes to your repository
+  
+- Agora RTC SDK
 
-## Support
+  
+- Agora Cloud Recording
 
-For questions or issues, please contact the Agora Developer Relations team.
+  
+- Agora Content Moderation
+
+  
+- OpenAI API
+
+  
+- Hugging Face Models
+
+  
+  
+
+Follow the steps below to **fork, develop, and submit** your project.
+
+---
+
+## 📌 **Submission Guidelines**
+
+### **1. Fork this Repository**
+
+Click the Fork button on the top right to create a copy of this repository under your GitHub account.
+
+### **2. Clone Your Forked Repository**
+
+After forking, clone the repository to your local machine.
+
+```bash
+git clone https://github.com/YOUR-GITHUB-USERNAME/agora-hackathon-template-test1.git
+cd agora-hackathon-template-test1
+```
+
+### **3. Create Your Team Folder**
+
+Inside the `submissions/` directory, create a new folder using your team name.  
+Example:
+
+submissions/
+ ├── team-name/
+ │   ├── README.md  # (Required: Describe your project)
+ │   ├── demo.mp4  # (Required: A demo video)
+ │   ├── src/  # (Your source code)
+ │   └── docs/  # (Any documentation or images)
+
+
+### **4. Work on Your Project**
+
+- Develop your project inside your team folder.
+- Include a `README.md` file explaining your project, its setup, and usage. Include any special instructions to run it.
+- Include a short demo video or screenshots in the `docs/` folder.
+
+### **5. Commit and Push Changes**
+
+```bash
+git add .
+git commit -m "Submission commit - Team [Your Team Name]"
+git push
+```
+
+### **6. Submit via Pull Request**
+
+1. Go to your forked repo on GitHub.
+2. Click the **"New Pull Request"** button.
+3. Set the base repository to `AgoraIO-Community/agora-hackathon-template-test1` and compare it with your forked branch.
+4. In the PR description, include:
+   - Team Name
+   - Project Name
+   - A brief summary of the project
+   - Any special instructions of features to focus on or to avoid because they may not be finished. (If applicable)
+5. Click **"Create Pull Request"** to submit your project.
+
+---
+
+## 🏆 **Judging Criteria**
+
+Projects will be evaluated based on:  
+
+✅ **Innovation** – Uniqueness of the idea  
+
+✅ **Functionality** – How well it works  
+
+✅ **Impact** – Real-world use case potential  
+
+✅ **Technical Execution** – Code quality and implementation  
+
+✅ **Documentation and Ease of Testing** – Quality of documentation and how easily judges can test the project  
+
+✅ **User Experience** – Quality of interaction and overall user experience  
+
+
+---
+
+## ❓ **Need Help?**
+
+For any questions, reach out to [**Vernon Marshall**](mailto:vernon.marshall @agora.io) or join our Discord channel{% if contact.communication.link %} at [hackathon-support](https://discord.gg/agora-hackathon){% else %}: hackathon-support{% endif %}.
+
+{% if contact.additional_info %}
+For urgent matters, please reach out directly via email.
+{% endif %}
+
+**Happy hacking and good luck!** 🚀
